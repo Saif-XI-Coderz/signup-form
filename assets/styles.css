@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: #ebf4f4 url("bg.png");
+    font-family: "arial";
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+
+.form-container{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+form.centered{
+    width: 56%;
+    margin:auto;
+}
+
+form.centered fieldset{
+    height: 100%;
+    padding: 2em;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cfdede;
+}
+
+form.centered fieldset legend{
+    background-color: #01b3b3;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    padding: 0.6em 0.8em;
+}
+
+.form-element{
+    margin-bottom: 1rem;
+}
+
+.form-element label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-element label.required:after{
+    content:' *';
+    color: #01b3b3;
+}
+
+.form-element input{
+    display: block;
+    width: 100%;
+    height: 3em;
+    padding: 0 1em;
+    font-style: italic;
+    color: #777777;
+    background: #ebf4f4 url("bg.png");
+    border: 1px solid #cfdede;
+    border-radius:2px;
+}
+
+input[type=submit] {
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 2px #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    font-size: 1.33em;
+    font-weight:bold;
+    border: 1px solid #dcdcdc;
+    color:#ffffff;
+    background-color: #01b3b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+    padding: 1em 0;
+    cursor: pointer;
+    border-radius:5px;
+}
